@@ -8,7 +8,7 @@ import React, { Component } from 'react'
  */
 
 
-class LoginAbi extends Component{
+class ClassComponent extends Component{
 
    constructor(props){ // first
 
@@ -34,4 +34,4 @@ this.setState(prevState => {
         )
         }
 }
-export default LoginAbi
+export default ClassComponent
