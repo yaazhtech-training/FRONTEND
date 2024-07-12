@@ -5,14 +5,16 @@ import LoginAbi from './Abinaya/LoginAbi';
 import Abc from './Abinaya/Abc';
 import SearchBar from './Tests/SearchBar';
 import TaskList from './Tests/TaskList';
+import UseState from './Component/UseState';
+import UseEffect from './Component/UseEffect';
 
 function App() {
   return (
     <div className="App">
  <BrowserRouter>
  <Routes>
-  <Route path='/' element={<SearchBar/>}/>
-  <Route path='/abcd' element={<TaskList/>}/>
+  <Route path='/' element={<UseState/>}/>
+  <Route path='/abc' element={<UseEffect/>}/>
  </Routes>
  </BrowserRouter>
     </div>
