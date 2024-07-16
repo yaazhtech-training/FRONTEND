@@ -7,6 +7,7 @@ import SearchBar from './Tests/SearchBar';
 import TaskList from './Tests/TaskList';
 import UseState from './Component/UseState';
 import UseEffect from './Component/UseEffect';
+import LifeCycle from './Component/LifeCycle';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
  <Routes>
   <Route path='/' element={<UseState/>}/>
   <Route path='/abc' element={<UseEffect/>}/>
+  <Route path='/abcd' element={<LifeCycle/>}/>
+
  </Routes>
  </BrowserRouter>
     </div>

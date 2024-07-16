@@ -7,23 +7,23 @@ class LifeCycle extends Component {
     super(props);
 
     this.state = {
-      count: 100 //initiate
+      count: 0//initiate
     };
   }
 
-  componentDidMount() {
+  componentDidMount() { //creating -------- constructor, render, 
     console.log('Component mounted');
     // Example of setting up event listeners or fetching data
     document.addEventListener('mousedown', this.handleMouseDown);
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) { //update ------ render
     if (prevState.count !== this.state.count) {
     console.log('Count updated');
     }
   }
 
-  componentWillUnmount() {
+  componentWillUnmount() { //removing ----- remove lastState stored in the dom
   console.log('Component will unmount');
     document.removeEventListener('mousedown', this.handleMouseDown);
   }
@@ -34,7 +34,7 @@ class LifeCycle extends Component {
 
   increaseCount = () => {
     this.setState(prevState => ({
-      count: prevState.count - 10
+      count: prevState.count + 20
     }));
   };
 
