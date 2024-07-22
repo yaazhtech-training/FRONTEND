@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 const FunctionComponent = () => {
 
   const[number, setNumber]= useState(0); //initiate const , let, var keyword
-
+const [count, setCount ] = useState();
    useEffect(()=>{
     console.log("Checkball",checkBall);
    

@@ -6,7 +6,7 @@ import React, { Component } from 'react'
  * render()
  * life methods
  */
-
+// StateFull component
 
 class ClassComponent extends Component{
 
@@ -15,7 +15,8 @@ class ClassComponent extends Component{
     super(props)
 
     this.state={
-  count:10
+  count:10,
+  numbers : 1
     }
    }
     
