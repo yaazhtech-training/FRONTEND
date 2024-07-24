@@ -10,19 +10,24 @@ import UseEffect from './Component/UseEffect';
 import LifeCycle from './Component/LifeCycle';
 import From1 from './Component/From1';
 import Form2 from './Component/Form2';
+import Tv from './Component/Propss';
+import Propss from './Component/Propss';
 
 function App() {
   return (
     <div className="App">
- <BrowserRouter>
- <Routes>
-  {/* <Route path='/' element={<UseState/>}/>
+  <BrowserRouter>
+ <Routes> 
+   <Route path='/' element={<UseState/>}/>
   <Route path='/abc' element={<UseEffect/>}/>
-  <Route path='/abcd' element={<LifeCycle/>}/> */}
+  <Route path='/abi' element={<LifeCycle/>}/> 
   <Route path='/' element={<Form2/>}/>
 
  </Routes>
- </BrowserRouter>
+ </BrowserRouter> 
+ {/* <Propss  time= "2 o clock"/>
+ <Propss  time= "10 o clock"/>
+ <Propss  time= "20 o clock"/> */}
     </div>
   );
 }
