@@ -37,7 +37,7 @@ const Test = () => {
 
      useEffect(()=>{
         const interval= setInterval(()=>{
-            setTime(new Date())
+            setTime(new Date())// update
         }, 1000)
      },[])
 

@@ -8,6 +8,8 @@ import React, { Component } from 'react'
  */
 // StateFull component
 
+// important keyword ====== this
+
 class ClassComponent extends Component{
 
    constructor(props){ // first
@@ -21,7 +23,7 @@ class ClassComponent extends Component{
    }
     
 incrementCount1 =()=>{
-this.setState(prevState => {
+this.setState(prevState => { // updating state
     return {count: prevState.count + 10}
 })
 

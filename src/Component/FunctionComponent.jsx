@@ -15,8 +15,8 @@ const [count, setCount ] = useState();
    },[]);
 
    function checkBall(){
-    if(number>10){ //condition
-  setNumber(0); //update
+    if(number>10){ //   condition
+  setNumber(0); //  updating state
     }}
 
 function updateNumber(){

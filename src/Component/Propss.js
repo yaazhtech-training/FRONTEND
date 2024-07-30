@@ -12,8 +12,15 @@ const Propss = (props) => {
 export default Propss
 
 //props and state
-
+/************************************* */
 // props ====== read message - immutable
 //        ======  passing the data
-
+//       =======
 //        from one component to another [parent -> child]
+//        =======  reusable
+
+
+//state   ========  change the data - mutable
+//        ======== managable /////  updating
+//        ======   within the same component
+//       ========  storing data
