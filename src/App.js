@@ -12,16 +12,17 @@ import From1 from './Component/From1';
 import Form2 from './Component/Form2';
 import Tv from './Component/Propss';
 import Propss from './Component/Propss';
+import SignInEvent from './BrowserEvents/SignInEvent';
 
 function App() {
   return (
     <div className="App">
   <BrowserRouter>
  <Routes> 
-   <Route path='/' element={<UseState/>}/>
+  
   <Route path='/abc' element={<UseEffect/>}/>
   <Route path='/abi' element={<LifeCycle/>}/> 
-  <Route path='/' element={<Form2/>}/>
+  <Route path='/' element={<SignInEvent/>}/>
 
  </Routes>
  </BrowserRouter> 
