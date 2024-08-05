@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-
+//CustomHooks
 const UseInput = (initvalue) => {
 
     const[value, setValue] = useEffect(initvalue);

@@ -3,6 +3,7 @@
 // let nam = "rupa"  // arrays ---- collections of data   
 
 // let name =  []         //new Array()
+//let name = new Array();
 
 // console.log(name)
 
