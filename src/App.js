@@ -13,6 +13,8 @@ import Form2 from './Component/Form2';
 import Tv from './Component/Propss';
 import Propss from './Component/Propss';
 import SignInEvent from './BrowserEvents/SignInEvent';
+import AbC from './Component/AbC';
+import FunctionComponent from './Component/FunctionComponent';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
   <Route path='/abc' element={<UseEffect/>}/>
   <Route path='/abi' element={<LifeCycle/>}/> 
   <Route path='/' element={<SignInEvent/>}/>
+  <Route path='/abcd' element={<AbC/>}/>
+  <Route path='/fun' element={<FunctionComponent/>}/>
 
  </Routes>
  </BrowserRouter> 

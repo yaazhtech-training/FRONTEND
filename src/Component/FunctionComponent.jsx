@@ -8,6 +8,8 @@ const FunctionComponent = () => {
 
   const[number, setNumber]= useState(0); //initiate const , let, var keyword
 const [count, setCount ] = useState();
+
+
    useEffect(()=>{
     console.log("Checkball",checkBall);
    
@@ -15,14 +17,18 @@ const [count, setCount ] = useState();
    },[]);
 
    function checkBall(){
-    if(number>10){ //   condition
+    if(number>100){ //   condition
   setNumber(0); //  updating state
     }}
 
 function updateNumber(){
   setNumber((prevstate)=>
-  {return prevstate+1})
+  {return prevstate + 10})
 }
+function numbers(){
+  setNumber((prevstate)=>
+  {return prevstate * 2})
+};
   return (
     <div>
 
