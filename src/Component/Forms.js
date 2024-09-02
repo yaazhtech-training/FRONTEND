@@ -1,15 +1,15 @@
 import React, { useState, useInput } from 'react';
 
 function Forms() {
-  // const [formData, setFormData] = useState({
-  //   username: '',
-  //   password: ''
-  // });
-  const [userName,bindUserName,resetUserName] = useInput(" ");
+  const [formData, setFormData] = useState({
+    username: '',
+    password: ''
+  });
+ // const [userName,bindUserName,resetUserName] = useInput(" ");
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-   // setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (event) => {
@@ -19,17 +19,9 @@ function Forms() {
   };
 
   return (
-    // <form onSubmit={handleSubmit}> 
-      <label>
-        Username:
-        <input
-          type="text"
-          name="username"
-        {...bindUserName}
-          onChange={handleInputChange}
-        />
-      </label>
-     /* { <br />
+     <form onSubmit={handleSubmit}> 
+     
+      <br />
       <label>
         Password:
         <input
@@ -39,10 +31,28 @@ function Forms() {
           onChange={handleInputChange}
         />
       </label>
+      <label>
+      UserName:
+        <input
+          type="text"
+          name="username"
+          value={formData.username}
+          onChange={handleInputChange}
+        />
+      </label>
       <br />
-      <button type="submit">Submit</button>
-    </form>} */
+      <button type="submit" onSubmit={{handleSubmit}}>Submit</button>
+    </form>
   );
 }
 
 export default Forms;
+ // <label>
+      //   Username:
+      //   <input
+      //     type="text"
+      //     name="username"
+      //   {...bindUserName}
+      //     onChange={handleInputChange}
+      //   />
+      // </label>

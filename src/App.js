@@ -15,6 +15,7 @@ import Propss from './Component/Propss';
 import SignInEvent from './BrowserEvents/SignInEvent';
 import AbC from './Component/AbC';
 import FunctionComponent from './Component/FunctionComponent';
+import Forms from './Component/Forms';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
   <Route path='/' element={<SignInEvent/>}/>
   <Route path='/abcd' element={<AbC/>}/>
   <Route path='/fun' element={<FunctionComponent/>}/>
+  <Route path='/forms' element={<Forms/>}/>
 
  </Routes>
  </BrowserRouter> 
