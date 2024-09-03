@@ -16,6 +16,7 @@ import SignInEvent from './BrowserEvents/SignInEvent';
 import AbC from './Component/AbC';
 import FunctionComponent from './Component/FunctionComponent';
 import Forms from './Component/Forms';
+import Palindrome from './Praveen/ReactJSX/Palindrome';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
   <Route path='/abcd' element={<AbC/>}/>
   <Route path='/fun' element={<FunctionComponent/>}/>
   <Route path='/forms' element={<Forms/>}/>
+  <Route path='/palin' element={<Palindrome/>}/>
 
  </Routes>
  </BrowserRouter> 
