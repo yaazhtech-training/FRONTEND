@@ -31,6 +31,7 @@ function App() {
   <Route path='/fun' element={<FunctionComponent/>}/>
   <Route path='/forms' element={<Forms/>}/>
   <Route path='/palin' element={<Palindrome/>}/>
+  {/* <Route path='/forms' element={<Forms/>}/> */}
 
  </Routes>
  </BrowserRouter> 
