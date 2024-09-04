@@ -17,6 +17,7 @@ import AbC from './Component/AbC';
 import FunctionComponent from './Component/FunctionComponent';
 import Forms from './Component/Forms';
 import Palindrome from './Praveen/ReactJSX/Palindrome';
+import Fibonaccai from './Praveen/Fibonaccai';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
   <Route path='/fun' element={<FunctionComponent/>}/>
   <Route path='/forms' element={<Forms/>}/>
   <Route path='/palin' element={<Palindrome/>}/>
+  <Route path='Fib' element={<Fibonaccai/>}/>
   {/* <Route path='/forms' element={<Forms/>}/> */}
 
  </Routes>
