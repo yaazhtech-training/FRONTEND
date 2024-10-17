@@ -30,7 +30,7 @@
 import React, { useEffect, useState } from 'react'
 /* Digital clock */
 
-const Test = () => {
+const DigitalClock = () => {
 
      const [time, setTime]= useState(new Date())
      const [interval, setInterval]= useState()
@@ -51,4 +51,4 @@ const Test = () => {
   )
 }
 
-export default Test
+export default DigitalClock

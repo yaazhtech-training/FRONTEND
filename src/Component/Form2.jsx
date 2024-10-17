@@ -1,11 +1,12 @@
 import React from 'react'
+import { Form } from 'react-router-dom';
 
 const Form2 = (props) => {
 const{ name }=props;
 
   return (
     <div>
-        <Form1/>
+      //  <Form/>
         My name is  : {props.name}</div>
   )
 }

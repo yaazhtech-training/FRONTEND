@@ -19,19 +19,19 @@
 //  * var , let, const
 //  */
 
-// //var
+// //var  ...............globally scoped - hoisting[undefined]
 // var data1 = "Rupa"
 // var data1 = "Rupa Abi Sumi"
 // var data1 = "Hell000"
 // console.log(data1)
 
-// //let
+// //let..............blocked scope - cannot hoisted [Refference Error]
 
 // let abi = "let keyword"
 //  abi = "hauiii"
 // console.log(abi)
 
-// // const 
+// // const ..............blocked scope - cannot hoisted [Refference Error]
 // const abi1 = "let keyword to the world"
 //  const abi12 = "hauiii"
 // console.log(abi12)

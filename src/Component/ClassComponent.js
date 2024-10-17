@@ -24,7 +24,7 @@ class ClassComponent extends Component{
     
 incrementCount1 =()=>{
 this.setState(prevState => { // updating state
-    return {count: prevState.count + 10}
+    return {count: prevState.count + 10} //increase by 10
 })
 
 }

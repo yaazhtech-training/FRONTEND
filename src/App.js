@@ -1,23 +1,10 @@
 import './App.css';
 import {BrowserRouter,Routes,Route, Form} from 'react-router-dom';
 
-import LoginAbi from './Abinaya/LoginAbi';
-import Abc from './Abinaya/Abc';
-import SearchBar from './Tests/SearchBar';
-import TaskList from './Tests/TaskList';
-import UseState from './Component/UseState';
-import UseEffect from './Component/UseEffect';
-import LifeCycle from './Component/LifeCycle';
-import From1 from './Component/From1';
-import Form2 from './Component/Form2';
-import Tv from './Component/Propss';
-import Propss from './Component/Propss';
-import SignInEvent from './BrowserEvents/SignInEvent';
-import AbC from './Component/AbC';
+import ClassComponent from './Component/ClassComponent';
+import DigitalClock from './Component/DigitalClock';
 import FunctionComponent from './Component/FunctionComponent';
-import Forms from './Component/Forms';
-import Palindrome from './Praveen/ReactJSX/Palindrome';
-import Fibonaccai from './Praveen/Fibonaccai';
+import From1 from './Component/From1';
 
 function App() {
   return (
@@ -25,14 +12,20 @@ function App() {
   <BrowserRouter>
  <Routes> 
   
-  <Route path='/abc' element={<UseEffect/>}/>
+  {/* <Route path='/abc' element={<UseEffect/>}/>
   <Route path='/abi' element={<LifeCycle/>}/> 
   <Route path='/' element={<SignInEvent/>}/>
   <Route path='/abcd' element={<AbC/>}/>
   <Route path='/fun' element={<FunctionComponent/>}/>
   <Route path='/forms' element={<Forms/>}/>
   <Route path='/palin' element={<Palindrome/>}/>
-  <Route path='Fib' element={<Fibonaccai/>}/>
+  <Route path='Fib' element={<Fibonaccai/>}/> */}
+  <Route path='/class' element={<ClassComponent/>}/>
+  <Route path='/john' element={<DigitalClock/>}/>
+  <Route path='/function' element={<FunctionComponent/>}/>
+  <Route path='/form' element={<From1/>}/>
+
+
   {/* <Route path='/forms' element={<Forms/>}/> */}
 
  </Routes>
@@ -45,6 +38,19 @@ function App() {
 }
 
 export default App;
+
+
+/*
+
+<BrowserRouter>  <>tag/element
+
+<Router>
+
+
+</Router>
+
+</BrowserRouter>
+*/
 
 
 

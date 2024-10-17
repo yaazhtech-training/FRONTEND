@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
-
+//functional component
 const From1 = () => {
-const name = "Rupa";
-    const text = `My name is : ${name}`;
-
-  return (
-    <div>My name is  : {text}</div>
+//logic
+const[ball,setBall] = useState(100); // 1--state  2. update state
+  return (// css part
+    <>
+ <h2 style={{fontSize:"60px", color:"green" }}>
+        I am going to count the number of balls : {ball}
+      </h2>
+    </>
   )
 }
 

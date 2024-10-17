@@ -10,7 +10,7 @@ const FunctionComponent = () => {
 const [count, setCount ] = useState();
 
 
-   useEffect(()=>{
+   useEffect(()=>{ //hook
     console.log("Checkball",checkBall);
    
     checkBall();
@@ -32,12 +32,13 @@ function numbers(){
   return (
     <div>
 
-      <h1 style={{fontSize:"40px", color:"green" }}>
+      <h1 style={{fontSize:"40px", color:"violet" }}>
         I am going to count the number of balls : {number}
       </h1>
       <button size="lg "style={{color :"red", fontSize:"20px" }}
 
 onClick={ updateNumber}> add the ball
+onChange // ..............onchange
       </button>
     </div>
   )
@@ -55,3 +56,21 @@ export default FunctionComponent
  * 
  * jsx
  */
+/*
+
+Const test =()=>{
+  
+
+
+
+  return(
+  
+  
+  
+  )
+  
+  
+  }
+
+  export default test
+*/
