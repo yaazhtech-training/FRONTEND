@@ -5,6 +5,8 @@ import ClassComponent from './Component/ClassComponent';
 import DigitalClock from './Component/DigitalClock';
 import FunctionComponent from './Component/FunctionComponent';
 import From1 from './Component/From1';
+import LifeCycle from './Component/LifeCycle';
+import Abc from './Component/AbC';
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
  <Routes> 
   
   {/* <Route path='/abc' element={<UseEffect/>}/>
-  <Route path='/abi' element={<LifeCycle/>}/> 
+ 
   <Route path='/' element={<SignInEvent/>}/>
   <Route path='/abcd' element={<AbC/>}/>
   <Route path='/fun' element={<FunctionComponent/>}/>
@@ -24,7 +26,8 @@ function App() {
   <Route path='/john' element={<DigitalClock/>}/>
   <Route path='/function' element={<FunctionComponent/>}/>
   <Route path='/form' element={<From1/>}/>
-
+  <Route path='/abi' element={<LifeCycle/>}/> 
+  <Route path='/abc' element ={<Abc/>}/>
 
   {/* <Route path='/forms' element={<Forms/>}/> */}
 

@@ -11,17 +11,17 @@ class LifeCycle extends Component {
     };
   }
 
-  componentDidMount() { //creating -------- constructor, render, 
-    console.log('Component mounted');
-    // Example of setting up event listeners or fetching data
-    document.addEventListener('mousedown', this.handleMouseDown);
-  }
+  // componentDidMount() { //creating -------- constructor, render, 
+  //   console.log('Component mounted');
+  //   // Example of setting up event listeners or fetching data
+  //   document.addEventListener('mousedown', this.handleMouseDown);
+  // }
 
-  componentDidUpdate(prevProps, prevState) { //update ------ render
-    if (prevState.count !== this.state.count) {
-    console.log('Count updated');
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) { //update ------ render
+  //   if (prevState.count !== this.state.count) {
+  //   console.log('Count updated');
+  //   }
+  // }
 
   componentWillUnmount() { //removing ----- remove lastState stored in the dom
   console.log('Component will unmount');

@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const AbC = () => {
+function Abc(){
 
 
 
-  return (
-    <div style={{color :"red", font:' 2px'}}>Varsha</div>
+
+  return(
+<div style={{ color:"blue" , fontSize:"80px" , fontFamily:"cursive" , fontStyle:"italic"}}>
+  I am a frontend Developer!!!!
+</div>
   )
-
 }
-
-export default AbC
+export default Abc;

@@ -1,5 +1,5 @@
 import React  from "react";
-
+//HOC - Higher Order Component
 const updatedComponent = (OriginalComponent)=>{
     class NewComponent extends React.Component{
       constructor(props) {
@@ -25,3 +25,8 @@ const updatedComponent = (OriginalComponent)=>{
     return NewComponent
 }
 export default updatedComponent
+
+// props - small data
+// Context - small data - global
+ 
+// HOC -  component logic

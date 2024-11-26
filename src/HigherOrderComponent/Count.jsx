@@ -32,3 +32,29 @@ return (
  }
  
  export default updatedComponent(Count)
+
+// 
+//   class Count extends React.Component{
+//     constructor(props) {
+
+//       super(props)
+    
+//       this.state = {
+//         countes :0
+//       }
+//     }
+//     incrementCount = ()=>{
+//     this.setState(prevState => {
+//       return { countes: prevState.countes + 2}
+//     })
+    
+//     }
+//       render(){
+//         const {countes,incrementCount}=this.state
+//           
+//           incrementCount = {this.state.incrementCount}/>
+//       }
+//   }
+//   
+// }
+// export default Count
