@@ -1,19 +1,33 @@
 import './App.css';
-import {BrowserRouter,Routes,Route, Form} from 'react-router-dom';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
+<<<<<<< Updated upstream
 import ClassComponent from './Component/ClassComponent';
 import DigitalClock from './Component/DigitalClock';
 import FunctionComponent from './Component/FunctionComponent';
 import From1 from './Component/From1';
 import LifeCycle from './Component/LifeCycle';
 import Abc from './Component/AbC';
+=======
+//import ClassComponent from './Component/ClassComponent';
+//import DigitalClock from './Component/DigitalClock';
+//import FunctionComponent from './Component/FunctionComponent';
+//import From1 from './Component/From1';
+import Array from './Praveen/Array';
+import Demo from './Praveen/Demo';
+import FunctionComponent1 from './Praveen/FunctionComponent1';
+import DemoFunction from './Praveen/DemoFunction';
+>>>>>>> Stashed changes
 
 function App() {
   return (
     <div className="App">
   <BrowserRouter>
- <Routes> 
-  
+ <Routes>
+ <Route path='/array' element={<Array/>}/> 
+ <Route path='/demo' element={<Demo/>}/>
+ <Route path='/function' element={<FunctionComponent1/>}/> 
+ <Route path='/demofun' element={<DemoFunction/>}/> 
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
@@ -21,7 +35,7 @@ function App() {
   <Route path='/fun' element={<FunctionComponent/>}/>
   <Route path='/forms' element={<Forms/>}/>
   <Route path='/palin' element={<Palindrome/>}/>
-  <Route path='Fib' element={<Fibonaccai/>}/> */}
+  <Route path='Fib' element={<Fibonaccai/>}/> 
   <Route path='/class' element={<ClassComponent/>}/>
   <Route path='/john' element={<DigitalClock/>}/>
   <Route path='/function' element={<FunctionComponent/>}/>
