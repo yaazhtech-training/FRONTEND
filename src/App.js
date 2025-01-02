@@ -1,14 +1,12 @@
 import './App.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 
-<<<<<<< Updated upstream
 import ClassComponent from './Component/ClassComponent';
 import DigitalClock from './Component/DigitalClock';
 import FunctionComponent from './Component/FunctionComponent';
 import From1 from './Component/From1';
 import LifeCycle from './Component/LifeCycle';
 import Abc from './Component/AbC';
-=======
 //import ClassComponent from './Component/ClassComponent';
 //import DigitalClock from './Component/DigitalClock';
 //import FunctionComponent from './Component/FunctionComponent';
@@ -17,7 +15,6 @@ import Array from './Praveen/Array';
 import Demo from './Praveen/Demo';
 import FunctionComponent1 from './Praveen/FunctionComponent1';
 import DemoFunction from './Praveen/DemoFunction';
->>>>>>> Stashed changes
 
 function App() {
   return (
