@@ -15,6 +15,8 @@ import Array from './Praveen/Array';
 import Demo from './Praveen/Demo';
 import FunctionComponent1 from './Praveen/FunctionComponent1';
 import DemoFunction from './Praveen/DemoFunction';
+import ClickEvent from './Dhiva/ClickEvent';
+import Forms from './Dhiva/Forms';
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
   <BrowserRouter>
  <Routes>
  <Route path='/array' element={<Array/>}/> 
+ <Route path="/clickevent" element={<ClickEvent/>}/>
  <Route path='/demo' element={<Demo/>}/>
  <Route path='/function' element={<FunctionComponent1/>}/> 
  <Route path='/demofun' element={<DemoFunction/>}/> 
+ <Route path='/forms' element={<Forms/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
