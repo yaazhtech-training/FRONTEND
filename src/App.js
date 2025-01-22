@@ -17,6 +17,10 @@ import FunctionComponent1 from './Praveen/FunctionComponent1';
 import DemoFunction from './Praveen/DemoFunction';
 import ClickEvent from './Dhiva/ClickEvent';
 import Forms from './Dhiva/Forms';
+import Increament from './Dhiva/ForLoop/Increament';
+import Decreament from './Dhiva/ForLoop/Decreament';
+import OddNumber from './Dhiva/ForLoop/OddNumber';
+import EvenNumber from './Dhiva/ForLoop/EvenNumbers';
 
 function App() {
   return (
@@ -29,6 +33,10 @@ function App() {
  <Route path='/function' element={<FunctionComponent1/>}/> 
  <Route path='/demofun' element={<DemoFunction/>}/> 
  <Route path='/forms' element={<Forms/>}/>
+ <Route path='/Increament' element={<Increament/>}/>
+ <Route path='/decreament' element={<Decreament/>}/>
+ <Route path='/oddnumber' element={<OddNumber/>}/>
+ <Route path='/evennumbers' element={<EvenNumber/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
