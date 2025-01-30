@@ -21,6 +21,7 @@ import Increament from './Dhiva/ForLoop/Increament';
 import Decreament from './Dhiva/ForLoop/Decreament';
 import OddNumber from './Dhiva/ForLoop/OddNumber';
 import EvenNumber from './Dhiva/ForLoop/EvenNumbers';
+import UseState from './Dhiva/hooks/UseState';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
  <Route path='/decreament' element={<Decreament/>}/>
  <Route path='/oddnumber' element={<OddNumber/>}/>
  <Route path='/evennumbers' element={<EvenNumber/>}/>
+ <Route path='/usestate' element={<UseState/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
