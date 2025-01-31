@@ -23,6 +23,7 @@ import OddNumber from './Dhiva/ForLoop/OddNumber';
 import EvenNumber from './Dhiva/ForLoop/EvenNumbers';
 import UseState from './Dhiva/hooks/UseState';
 import UseEffect from './Dhiva/hooks/UseEffect';
+import ApiCall from './Dhiva/ApiCalls/ApiCall';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
  <Route path='/evennumbers' element={<EvenNumber/>}/>
  <Route path='/usestate' element={<UseState/>}/>
  <Route path='/useEffect' element={<UseEffect/>}/>
+ <Route path='/api' element={<ApiCall/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
