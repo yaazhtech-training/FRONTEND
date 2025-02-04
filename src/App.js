@@ -24,10 +24,17 @@ import EvenNumber from './Dhiva/ForLoop/EvenNumbers';
 import UseState from './Dhiva/hooks/UseState';
 import UseEffect from './Dhiva/hooks/UseEffect';
 import ApiCall from './Dhiva/ApiCalls/ApiCall';
+import Main from './Dhiva/usecontext/Main';
+import Container from './Dhiva/usecontext/Container';
+import Users from './Dhiva/usecontext/Users';
+import User from './Dhiva/usecontext/User';
 
 function App() {
   return (
     <div className="App">
+
+<Main/>
+
   <BrowserRouter>
  <Routes>
  <Route path='/array' element={<Array/>}/> 
@@ -43,6 +50,11 @@ function App() {
  <Route path='/usestate' element={<UseState/>}/>
  <Route path='/useEffect' element={<UseEffect/>}/>
  <Route path='/api' element={<ApiCall/>}/>
+ <Route path='/main' element={<Main/>}/>
+ <Route path='/container' element={<Container/>}/>
+ <Route path='/users' element={<Users/>}/>
+ <Route path='/user' element={<User/>}/>
+
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>

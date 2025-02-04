@@ -1,5 +1,5 @@
+import axios from 'axios';
 import React, { useState } from 'react'
-
 const ApiCall = () => {
     const [user , setUser] = useState(null);
 
@@ -8,20 +8,23 @@ const ApiCall = () => {
             const response = await fetch("https://official-joke-api.appspot.com/random_joke")
                 const data = await response.json();
                 console.log(data)    
-            setUser(data)
+            setUser(data);
         }catch(error){
             console.error("Fetching data is missing")
         }
-        
-        
-    }
+     }
+
+    // async function apiCalls() {
+    //     const response = await axios.get("https://official-joke-api.appspot.com/random_joke")
+    //     console.log(response.data)
+    // }
   return (
     <div>
      <h1>Trigger Api</h1>
      <div>
         {user ? (
            <div> <h1>{user?.id}</h1>
-           <h2><p>Punchline:</p>{user?.punchkine}</h2>
+           <h2><p>Punchline:</p>{user?.punchline}</h2>
            <h3><p>Setup:</p> {user?.setup}</h3></div>
         ):(
             <h1>Click a button to fetch data</h1>
