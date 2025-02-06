@@ -1,5 +1,7 @@
 import React, { createContext, useState } from 'react';
 import Container from './Container';
+import User from './User';
+import Users from './Users';
 
 
 // Create context
@@ -17,7 +19,9 @@ const Main = () => {
         <Themecontext.Provider value={{ theme, toggleTheme }}>
             <button onClick={toggleTheme}>Toggle Theme</button>
             <h1>Main Component</h1>
+            <User/>
             <Container/>
+            <Users/>
         </Themecontext.Provider>
     );
 }

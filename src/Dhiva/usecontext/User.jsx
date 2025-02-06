@@ -11,7 +11,7 @@ const User = () => {
 
   return (
     <div style={themeStyles}>
-      User Component
+      <h1>User Component</h1>
     </div>
   );
 };
