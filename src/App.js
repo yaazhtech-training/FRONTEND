@@ -28,13 +28,13 @@ import Main from './Dhiva/usecontext/Main';
 import Container from './Dhiva/usecontext/Container';
 import Users from './Dhiva/usecontext/Users';
 import User from './Dhiva/usecontext/User';
+import Employee from './Dhiva/EmployeeSalery/Employee';
+import BudgetSalary from './Dhiva/EmployeeSalery/BudgetSalary';
+import LoanDeduction from './Dhiva/EmployeeSalery/LoanDeduction';
 
 function App() {
   return (
     <div className="App">
-
-<Main/>
-
   <BrowserRouter>
  <Routes>
  <Route path='/array' element={<Array/>}/> 
@@ -48,13 +48,15 @@ function App() {
  <Route path='/oddnumber' element={<OddNumber/>}/>
  <Route path='/evennumbers' element={<EvenNumber/>}/>
  <Route path='/usestate' element={<UseState/>}/>
- <Route path='/useEffect' element={<UseEffect/>}/>
+ {/* <Route path='/useEffect' element={<UseEffect/>}/> */}
  <Route path='/api' element={<ApiCall/>}/>
  <Route path='/main' element={<Main/>}/>
  <Route path='/container' element={<Container/>}/>
  <Route path='/users' element={<Users/>}/>
  <Route path='/user' element={<User/>}/>
-
+ <Route path='/employee' element={<Employee/>}/>
+ <Route path='/budget' element={<BudgetSalary/>}/>
+ <Route path='/loan' element={<LoanDeduction/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>
