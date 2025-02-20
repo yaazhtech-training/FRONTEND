@@ -31,6 +31,7 @@ import User from './Dhiva/usecontext/User';
 import Employee from './Dhiva/EmployeeSalery/Employee';
 import BudgetSalary from './Dhiva/EmployeeSalery/BudgetSalary';
 import LoanDeduction from './Dhiva/EmployeeSalery/LoanDeduction';
+import TaxDedutions from './Dhiva/EmployeeSalery/TaxDedutions';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
  <Route path='/employee' element={<Employee/>}/>
  <Route path='/budget' element={<BudgetSalary/>}/>
  <Route path='/loan' element={<LoanDeduction/>}/>
+ <Route path='/tax' element={<TaxDedutions/>}/>
   {/* <Route path='/abc' element={<UseEffect/>}/>
  
   <Route path='/' element={<SignInEvent/>}/>

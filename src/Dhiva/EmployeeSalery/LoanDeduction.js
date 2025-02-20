@@ -8,27 +8,25 @@
 import React from 'react'
 
 const LoanDeduction = () => {
-    const Employees = [
-        {name:"Dhiva" , daysWorked : 15 , salary : 700 , hasloan : true},
-        {name:"Praveen" , daysWorked : 18 , salary : 700 ,hasloan : false},
-        {name:"Ajith" , daysWorked : 20 , salary : 700 , hasloan : true},
-        {name:"Virat" , daysWorked : 22 , salary : 700,hasloan : false},
-        {name:"Ronaldo" , daysWorked : 25 , salary : 700 , hasloan : true}
-    ]
+  const Employees = [
+    {name:"Dhiva" , daysWorked : 15 , salary : 700 , hasloan : true},
+    {name:"Praveen" , daysWorked : 18 , salary : 700 ,hasloan : false},
+    {name:"Ajith" , daysWorked : 20 , salary : 700 , hasloan : true},
+    {name:"Virat" , daysWorked : 22 , salary : 700,hasloan : false},
+    {name:"Ronaldo" , daysWorked : 25 , salary : 700 , hasloan : true}
+]
 
-   
-    const AdditionalSalary = 1500;
-    const loanDeduction = 2000;
+const AdditionalSalary = 2000;
+const loanDeduction = 2500;
 
-    const calculateSalary = (daysWorked , salary , hasloan) => {
-        const totalSalary = daysWorked * salary;
-        const pf = totalSalary * (1.5 / 100)
-        const tdf = totalSalary * (1 /100)
-        const takeHomeSalary = totalSalary - pf - tdf - (hasloan ? loanDeduction : 0);
-        const AdditionalPayment = daysWorked >= 20 ? AdditionalSalary : 0 ;
-        
-        return{totalSalary , pf , tdf , takeHomeSalary , AdditionalPayment , hasloan};
-    }
+const calculateSalary = (daysWorked , salary , hasloan) => {
+     const totalSalary = daysWorked * salary;
+     const pf = totalSalary * (1.5 /100);
+     const tdf = totalSalary * (2/100);
+     const AdditionalPayment = daysWorked >= 20 ? AdditionalSalary : 0 ;
+     const takeHomeSalary = totalSalary - (pf + tdf) - (hasloan ? loanDeduction : 0) + AdditionalPayment; 
+     return{totalSalary ,takeHomeSalary , pf ,tdf , AdditionalPayment, hasloan}
+}
   return (
     <div>
       <h1>Employee Salary with Loan Deduction</h1>
@@ -44,30 +42,99 @@ const LoanDeduction = () => {
             <th>AdditionalSalary</th>
             <th>Loan</th>
             <th>takeHomeSalary</th>
+            
         </tr>
         </thead>
         <tbody>
-            {Employees.map((emp , index) => {
-               const {totalSalary , pf , tdf , takeHomeSalary , AdditionalPayment , hasloan} = calculateSalary(emp.daysWorked , emp.salary , emp.hasloan)
-              return(
-                <tr key={index}>
-                  <td>{emp.name}</td>
-                  <td>{emp.salary}</td>
-                  <td>{emp.daysWorked}</td>
-                  <td>{totalSalary}</td>
-                  <td>{pf}</td>
-                  <td>{tdf}</td>
-                  <td>{AdditionalPayment}</td>
-                  <td>{hasloan ? loanDeduction : 0}</td>
-                  <td>{takeHomeSalary}</td>
-                </tr>
-              )
-            })}
-           
+          {Employees.map((emp,index)=>{
+            const {totalSalary ,takeHomeSalary , pf ,tdf , AdditionalPayment, hasloan} = calculateSalary(emp.daysWorked ,emp.salary ,emp.hasloan)
+            return(
+              <tr>
+                <td>{emp.name}</td>
+                <td>{emp.salary}</td>
+                <td>{emp.daysWorked}</td>
+                <td>{totalSalary}</td>
+                <td>{pf}</td>
+                <td>{tdf}</td>
+                <td>{AdditionalPayment}</td>
+                <td>{hasloan ? loanDeduction : 0}</td>
+                <td>{takeHomeSalary}</td>
+              </tr>
+            )
+          })}
         </tbody>
-      </table>
+        </table>
     </div>
   )
 }
 
 export default LoanDeduction
+
+
+// import React from 'react'
+
+// const LoanDeduction = () => {
+    // const Employees = [
+    //     {name:"Dhiva" , daysWorked : 15 , salary : 700 , hasloan : true},
+    //     {name:"Praveen" , daysWorked : 18 , salary : 700 ,hasloan : false},
+    //     {name:"Ajith" , daysWorked : 20 , salary : 700 , hasloan : true},
+    //     {name:"Virat" , daysWorked : 22 , salary : 700,hasloan : false},
+    //     {name:"Ronaldo" , daysWorked : 25 , salary : 700 , hasloan : true}
+    // ]
+
+   
+//     const AdditionalSalary = 1500;
+//     const loanDeduction = 2000;
+
+//     const calculateSalary = (daysWorked , salary , hasloan) => {
+//         const totalSalary = daysWorked * salary;
+//         const pf = totalSalary * (1.5 / 100)
+//         const tdf = totalSalary * (1 /100)
+//         const takeHomeSalary = totalSalary - pf - tdf - (hasloan ? loanDeduction : 0);
+//         const AdditionalPayment = daysWorked >= 20 ? AdditionalSalary : 0 ;
+        
+//         return{totalSalary , pf , tdf , takeHomeSalary , AdditionalPayment , hasloan};
+//     }
+//   return (
+//     <div>
+      // <h1>Employee Salary with Loan Deduction</h1>
+      // <table>
+      //   <thead>
+      //   <tr>
+      //       <th>Employees</th>
+      //       <th>Salary</th>
+      //       <th>workingDays</th>
+      //       <th>totalSalary</th>
+      //       <th>PfDeduction</th>
+      //       <th>TdfDeduction</th>
+      //       <th>AdditionalSalary</th>
+      //       <th>Loan</th>
+      //       <th>takeHomeSalary</th>
+            
+      //   </tr>
+      //   </thead>
+//         <tbody>
+//             {Employees.map((emp , index) => {
+//                const {totalSalary , pf , tdf , takeHomeSalary , AdditionalPayment , hasloan} = calculateSalary(emp.daysWorked , emp.salary , emp.hasloan)
+//               return(
+//                 <tr key={index}>
+//                   <td>{emp.name}</td>
+//                   <td>{emp.salary}</td>
+//                   <td>{emp.daysWorked}</td>
+//                   <td>{totalSalary}</td>
+//                   <td>{pf}</td>
+//                   <td>{tdf}</td>
+//                   <td>{AdditionalPayment}</td>
+//                   <td>{hasloan ? loanDeduction : 0}</td>
+//                   <td>{Math.floor(takeHomeSalary)}</td>
+//                 </tr>
+//               )
+//             })}
+           
+//         </tbody>
+//       </table>
+//     </div>
+//   )
+// }
+
+// export default LoanDeduction
